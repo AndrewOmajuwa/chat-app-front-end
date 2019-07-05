@@ -6,7 +6,7 @@ import {onEvent} from './actions/messages'
 
  class App extends Component {
 
-   url = 'https://sheltered-tundra-81814.herokuapp.com/'
+   url = 'https://mighty-mesa-76259.herokuapp.com/'
   
   source = new EventSource(`${this.url}stream`);
 
