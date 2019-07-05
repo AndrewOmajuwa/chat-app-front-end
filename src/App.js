@@ -8,7 +8,7 @@ import {onEvent} from './actions/messages'
 
    url = 'https://mighty-mesa-76259.herokuapp.com/'
   
-  source = new EventSource(`${this.url}/stream`);
+  source = new EventSource(`${this.url}stream`);
 
   componentDidMount() {
     this.source.onmessage = this.props.onEvent;
@@ -32,7 +32,7 @@ import {onEvent} from './actions/messages'
     this.setState({ message: "" });
 
     request
-      .post(`${this.url}/message`)
+      .post(`${this.url}message`)
       .send({ message })
       .then(res => console.log("test", res));
   };
